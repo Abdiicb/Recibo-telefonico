@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Recibo telefonico</title>
+  <style>
+
+    body{
+      background-color: wheat;
+    }
+
+    h1{
+      box-shadow: aqua
+    }
+
+   
+  </style>
+
+</head>
+<body>
+
+  <h1 text-align="center">Recibo Telefonico</h1>
+  <br>
+  <table border="1">
+    <form>
+     <hr>
+     <tr>
+     <label for="Plan">Minutos de llamadas</label>
+     <input type="text" placeholder="Ej.100" id="time">
+     </tr>
+    <hr>
+    <tr>
+      <td>
+        <label for="Plan">Tipo de plan</label>
+        <br>
+        <input type="radio" name="plan" id="200" value="200">200
+        <br>
+        <input type="radio" name="plan" id="450" value="450">450
+        <br>
+       <input type="radio" name="plan" id="850" value="850">850
+      </td>
+    </tr>
+    <br>
+    <tr>
+      <td>
+        <label for="serv">Otros servicios</label>
+        <br>
+        <input type="checkbox" name="ant" value="30">Antivirus (30.00)
+        <br>
+        <input type="checkbox" name="servnub" value="50">Servicios de nube (50.00)
+        <br>
+        <input type="checkbox" name="serweb" value="40">Servicios web (40.00)
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label for="paquetes">Paquetes</label>
+        <br>
+        <select>
+          <option>Residencial</option>
+          <option>PYMES</option>
+          <option>Empresas</option>
+        </select>
+      </td>
+      <tr>
+        <td>
+          <button type="submit" id="btncalcular">Total a pagar:</button>
+        </td>
+      </tr>
+    </tr>
+  </form>
+  </table>
+
+  <!-- <script src="java.js"></script> -->
+  <script src="dom.js"></script>
+</body>
+</html>
